@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+
+    tools:context="com.xfzj.qqzoneass.activity.Splash">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="20dip">
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/SplashtextViewStyle" />
+
+        <TextView
+            android:id="@+id/tvWeather"
+            style="@style/SplashtextViewStyle"
+            android:layout_below="@+id/tvName" />
+
+        <TextView
+            android:id="@+id/tvTemp"
+            style="@style/SplashtextViewStyle"
+            android:layout_below="@+id/tvWeather" />
+
+    </RelativeLayout>
+</RelativeLayout>

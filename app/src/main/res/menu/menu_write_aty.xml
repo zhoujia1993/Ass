@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.xfzj.qqzoneass.activity.WriteAty">
+    <item
+        android:id="@+id/tvPublish"
+        android:orderInCategory="100"
+        android:title="发表"
+        app:showAsAction="ifRoom" />
+    
+</menu>

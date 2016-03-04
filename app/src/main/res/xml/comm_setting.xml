@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:defaultValue="5"
+        android:dialogTitle="刷新时间(min)"
+        android:inputType="number"
+        android:key="etCommRefreshTime"
+        android:summary="填写整数"
+        android:title="刷新时间(min)" />
+    <EditTextPreference
+        android:key="etCommNumForbid"
+        android:summary="请填写QQ号，多个QQ号用,隔开"
+        android:minHeight="200dip"
+        android:gravity="top"
+        android:title="屏蔽名单" />
+    <EditTextPreference
+        android:key="etCommConForbid"
+        android:summary="请填写过滤的内容，以/隔开"
+        android:minHeight="200dip"
+        android:gravity="top"
+        android:title="内容过滤" />
+    <EditTextPreference
+        android:key="etCommCon"
+        android:summary="请填写评论的内容，以/隔开"
+        android:minHeight="200dp"
+        android:gravity="top"
+        android:title="内容设置" />
+    <CheckBoxPreference
+        android:key="cbCommRepeat"
+        android:title="重复评论一条说说"></CheckBoxPreference>
+</PreferenceScreen>

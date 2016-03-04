@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/action_edit"
+        android:icon="@drawable/write"
+        
+        android:orderInCategory="80"
+        
+        app:showAsAction="ifRoom"
+        android:title="" />
+    <item
+        android:id="@+id/action_more"
+        android:icon="@mipmap/ic_launcher"
+        android:orderInCategory="90"
+        android:title="留言板"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@mipmap/ic_launcher"
+        android:orderInCategory="100"
+        android:title="设置"
+        app:showAsAction="never" />
+</menu>

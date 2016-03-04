@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="56dip"
+        android:background="#F2F2F2"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/primary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/Theme.AppCompat"
+            android:title="评论设置"></android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+    <fragment
+        android:id="@+id/frag"
+        android:name="com.xfzj.qqzoneass.activity.Comm_Setting_Aty$MyPreference"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></fragment>
+</LinearLayout>
+

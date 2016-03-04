@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">说说赞</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main_aty">MainAty</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_sspublish_aty">SSPublishAty</string>
+    <string name="title_activity_write_aty">WriteAty</string>
+    <string name="title_activity_phone_type_aty">PhoneTypeAty</string>
+    <string name="title_activity_location_aty">LocationAty</string>
+    <string name="title_activity_setting_aty">SettingAty</string>
+    <string name="title_activity_settings_aty">SettingsAty</string>
+    <string name="title_activity_like__setting__aty">Like_Setting_Aty</string>
+    <string name="title_activity_comm__setting__aty">Comm_Setting_Aty</string>
+    <string name="title_activity_pic_select_aty">PicSelectAty</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_web_view_aty">webViewAty</string>
+    <string name="title_activity_base_comm">BaseCommActivity</string>
+    <string name="title_activity_ad_aty">AdAty</string>
+    <string name="tips">点击下方的“打开广告”按钮，下载应用\n1个广告=3天\n2个广告=7天\n3个广告=12天\n...\n累计下载30个广告，即可免费使用本应用。当您觉得下载的广告个数已足够，别忘了点击“提交”按钮进行提交哦</string>
+    <string name="title_activity_feed_back__aty">FeedBack_Aty</string>
+    <string name="about">空间说赞是一款可以让您的空间更好玩的APP，可以给好友的说说自动点赞、自动评论。更有趣的是，它可以使您模拟在任一位置，使用任意机型，发表带图片和表情的说说。</string>
+
+
+</resources>

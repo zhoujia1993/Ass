@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key="like_setting"
+        
+        android:title="点赞设置"  />
+    <EditTextPreference
+        android:key="comm_setting"
+  
+        android:title="评论设置" />
+    <EditTextPreference
+        android:key="vip"
+        android:title="Vip会员" />
+    <EditTextPreference
+        android:key="update"
+        android:title="检查更新" />
+    <EditTextPreference
+        android:key="aboutit"
+        android:title="关于" />
+</PreferenceScreen>

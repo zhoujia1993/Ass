@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="#f5f5f5" >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="56dip"
+        android:background="#F2F2F2"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/primary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/Theme.AppCompat"
+            android:title="反馈建议"></android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/tvSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:textColor="@color/icons"
+            android:text="提交"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlheader"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <!-- 举报理由 start -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/iv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:text="*"
+                    android:textColor="@android:color/holo_red_dark" />
+
+                <TextView
+                    style="@style/font14_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv1"
+                    android:text="类目" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:padding="1dp"
+                android:background="@drawable/bg_spinner_popoup"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/sp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:dropDownVerticalOffset="0dp"
+                    android:dropDownWidth="221dp"
+                    android:popupBackground="@drawable/bg_spinner_popoup"
+                    android:spinnerMode="dropdown" >
+                </Spinner>
+
+                <TextView
+                    android:id="@+id/tvText"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="#ffffff"
+                    android:gravity="left|center_vertical"
+                    android:text="▼"
+                    android:textColor="#ff666666" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 举报理由 end -->
+
+
+        <!-- 详细说明 start -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/iv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:text="*"
+                    android:textColor="@android:color/holo_red_dark" />
+
+                <TextView
+                    android:id="@+id/tv"
+                    style="@style/font14_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv2"
+                    android:text="内容" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/et_content"
+                style="@style/font14_gray"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_moregroup"
+                android:gravity="top|center_vertical"
+                android:hint="请具体描述您的反馈内容，有助于我们解决您的问题！"
+                android:padding="10dp" />
+        </LinearLayout>
+        <!-- 详细说明 end -->
+
+
+        <!-- 手机号码 start -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/iv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:text="*"
+                    android:visibility="invisible" />
+
+                <TextView
+                    style="@style/font14_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv3"
+                    android:text="QQ号" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/et_qq"
+                style="@style/font14_gray"
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_moregroup"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="请输入与您联系的QQ号"
+                android:inputType="phone"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" />
+        </LinearLayout>
+        <!-- 手机号码 end -->
+
+    </LinearLayout>
+
+</LinearLayout>
