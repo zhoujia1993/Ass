@@ -66,7 +66,7 @@ public class UrlUtils {
      * 加载说说url的第一部分，后面接QQ号
      */
 
-    public static final String LOAD_SHUOSHUO1_URL = "http://ic2.s51.qzone.qq.com/cgi-bin/feeds/feeds3_html_more?uin=";
+    public static final String LOAD_SHUOSHUO1_URL = "http://user.qzone.qq.com/p/ic2.s51/cgi-bin/feeds/feeds3_html_more?uin=";
     /**
      * 加载说说url的第二部分，后面接gtk
      */

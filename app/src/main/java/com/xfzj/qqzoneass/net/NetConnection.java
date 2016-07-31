@@ -143,6 +143,9 @@ public class NetConnection {
         Log.i("aaa", "运行了");
         HttpGet get = new HttpGet(url);
         String cookie = context.getSharedPreferences(Constants.USERINFO, Context.MODE_PRIVATE).getString(Constants.COOKIE, "");
+//        String cookie="ptcz=dac1f34dea4481acd0ae659a49d5f35986ead8eded431b576d3509926bc397b5; uin=o0627252161; skey=@1FyJa4cLF; p_skey=aJN6ujeGbzn4PMSKo-0slG5EUmvmfJCN*2w9v6XzDT4_; pt4_token=b23Hzr4uRQ30GcilbXU6cefGFKgsIK4qU*dSZxDFctA_;";
+//        String cookie="cookie===uin=o0627252161; skey=@1FyJa4cLF; ptcz=acfa94ea8d77cbe561ec43a4071b274fe5148382782bf07eaf996f4badff7b64; ";
+//        String cookie = "ptcz=dac1f34dea4481acd0ae659a49d5f35986ead8eded431b576d3509926bc397b5; uin=o0627252161; skey=@6ok4FFfLf; pt4_token=eRG9opO8dIuW4Nevb5tTsLHtqB3I8m4VdDvlb9649xA_; p_skey=jVb4lCUnZkOmerdt5kyoBelsBH-mf7wEyGs7dGnWamA_; p_uin=o0627252161; ";
         if (null != cookie && !"".equals(cookie)) {
             get.setHeader("Cookie", cookie);
             Log.i("aaa", "cookie===" + cookie);

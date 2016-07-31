@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.xfzj.qqzoneass" >
+    package="com.xfzj.qqzoneass">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -22,16 +22,14 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppThemes"
-        tools:replace="android:icon, android:theme" >
+        tools:replace="android:icon, android:theme">
         <meta-data
             android:name="TencentMapSDK"
             android:value="IIIBZ-CWV3R-RQ5WJ-WBNXD-HMWRS-JQBKQ" />
         <meta-data
             android:name="UMENG_APPKEY"
             android:value="55ab982a67e58e8a3e007b3a" />
-        <meta-data
-            android:name="UMENG_CHANNEL"
-            android:value="${CHANNEL_ID}" />
+
 
         <activity
             android:name=".MainActivity"
@@ -49,6 +47,15 @@
         <activity
             android:name=".activity.SSPublishAty"
             android:label="@string/title_activity_sspublish_aty" />
+        <activity
+            android:name=".activity.DemoAty"
+            android:label="@string/title_activity_sspublish_aty">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".activity.WriteAty"
             android:label="@string/title_activity_write_aty" />
@@ -75,12 +82,8 @@
             android:label="@string/title_activity_pic_select_aty" />
         <activity
             android:name=".activity.Splash"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:label="@string/app_name">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".activity.webViewAty"
@@ -108,7 +111,7 @@
         <activity
             android:name="com.tencent.tauth.AuthActivity"
             android:launchMode="singleTask"
-            android:noHistory="true" >
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -132,17 +135,16 @@
             android:name="com.umeng.update.UpdateDialogActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
-    
+
         <activity
             android:name=".activity.FeedBack_Aty"
-            android:label="@string/title_activity_feed_back__aty" >
-        </activity>
+            android:label="@string/title_activity_feed_back__aty"></activity>
 
 
         <!-- 移动云AppX SDK  start-->
         <activity android:name="com.baidu.appx.ui.BDInnerBrowser" />
 
-        <receiver android:name="com.baidu.appx.app_download.CompleteReceiver" >
+        <receiver android:name="com.baidu.appx.app_download.CompleteReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
                 <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />

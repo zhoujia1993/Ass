@@ -151,8 +151,8 @@ public class LikeService extends Service {
      * @param failCallBack
      */
     private void loadShuoShuo(String qqNum, String gtk, final SuccessCallBack successCallBack, final FailCallBack failCallBack) {
-        String url = UrlUtils.LOAD_SHUOSHUO1_URL + qqNum + UrlUtils.LOAD_SHUOSHUO2_URL + gtk;
-        Log.i("aaa", "url"+url);
+        String url = UrlUtils.LOAD_SHUOSHUO1_URL + qqNum + UrlUtils.LOAD_SHUOSHUO2_URL + Config.getUserInfo(getApplicationContext()).gtk;
+        Log.i("aaa", "url" + url);
 
         new Result_Get_Net(getApplicationContext(), url, new Result_Get_Net.SuccessCallback() {
             @Override

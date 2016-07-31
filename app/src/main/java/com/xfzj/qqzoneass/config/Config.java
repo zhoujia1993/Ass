@@ -6,7 +6,6 @@ import android.content.SharedPreferences;
 import com.xfzj.qqzoneass.model.UserInfo;
 import com.xfzj.qqzoneass.model.Weather;
 import com.xfzj.qqzoneass.utils.Constants;
-import com.xfzj.qqzoneass.utils.Key;
 
 import java.util.Set;
 
@@ -22,7 +21,7 @@ public class Config {
      * @param number
      * @param password
      */
-    public static void saveUserInfo(Context context, String number, String password, String cookie, String skey, String sid) {
+    public static void saveUserInfo(Context context, String number, String password, String cookie, String skey, String sid, String pskey) {
         SharedPreferences sp = context.getSharedPreferences(Constants.USERINFO, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sp.edit();
         if (null != number && !"".equals(number))
@@ -30,9 +29,10 @@ public class Config {
         if (null != password && !"".equals(password))
             editor.putString(Constants.PASSWORD, password);
         if (null != cookie && !"".equals(cookie))
-            editor.putString(Constants.COOKIE, cookie);
-        if (null != skey && !"".equals(skey))
-            editor.putString(Constants.GTK, Key.g_tk(skey));
+            editor.putString(Constants.COOKIE, "ptcz=dac1f34dea4481acd0ae659a49d5f35986ead8eded431b576d3509926bc397b5; uin=o0627252161; skey=@6ok4FFfLf; pt4_token=eRG9opO8dIuW4Nevb5tTsLHtqB3I8m4VdDvlb9649xA_; p_skey=jVb4lCUnZkOmerdt5kyoBelsBH-mf7wEyGs7dGnWamA_; p_uin=o0627252161; ");
+        if (null != pskey && !"".equals(pskey)) {
+            editor.putString(Constants.GTK, "944147376");
+        }
         if (null != sid && !"".equals(sid))
             editor.putString(Constants.SID, sid);
         editor.commit();
@@ -46,7 +46,7 @@ public class Config {
      * @param userInfo
      */
     public static void saveUserInfo(Context context, UserInfo userInfo) {
-        saveUserInfo(context, userInfo.number, userInfo.password, userInfo.cookie, userInfo.gtk, userInfo.sid);
+        saveUserInfo(context, userInfo.number, userInfo.password, userInfo.cookie, userInfo.gtk, userInfo.sid, userInfo.p_skey);
     }
 
     /**

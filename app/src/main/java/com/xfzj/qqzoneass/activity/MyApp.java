@@ -3,7 +3,6 @@ package com.xfzj.qqzoneass.activity;
 import android.app.Application;
 import android.os.Build;
 
-import com.umeng.socialize.sso.UMQQSsoHandler;
 import com.xfzj.qqzoneass.config.Config;
 import com.xfzj.qqzoneass.utils.Funcation;
 
@@ -47,6 +46,7 @@ public class MyApp extends Application {
             sets.add("iPad mini 3");
             sets.add("iPad mini 2");
             Config.savePhoneTYpe(getApplicationContext(), sets);
+           
 
         }
 

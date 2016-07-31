@@ -210,7 +210,7 @@ public class MainActivity extends BaseCommActivity implements View.OnClickListen
 ////                Log.i("aaa", "重新加载地址");
 //                getsID(result);
 //                url = result;
-                Config.saveUserInfo(getApplicationContext(), number, password, null, null, null);
+                Config.saveUserInfo(getApplicationContext(), number, password, null, null, null,null);
                 //在服务器上建表
                 BmobUtils.getInstance(getApplication()).createMember(getApplicationContext(), number);
 

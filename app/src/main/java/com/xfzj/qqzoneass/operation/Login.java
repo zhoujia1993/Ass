@@ -236,7 +236,7 @@ public class Login {
 //                    p_skey = p_skey.substring(0, p_skey.indexOf(";"));
 //                    String pt4_token = cookie.substring(cookie.indexOf("pt4_token="));
 //                    pt4_token = pt4_token.substring(0, pt4_token.indexOf(";"));
-                    Config.saveUserInfo(context, null, null, uin + "; skey=" + skey + "; " + ptcz + "; ", skey, null);
+                    Config.saveUserInfo(context, null, null, uin + "; skey=" + skey + "; " + ptcz + "; ", skey, null,null);
                 }
             }
 
@@ -312,7 +312,7 @@ public class Login {
                     p_skey = p_skey.substring(0, p_skey.indexOf(";"));
                     String pt4_token = cookie.substring(cookie.indexOf("pt4_token="));
                     pt4_token = pt4_token.substring(0, pt4_token.indexOf(";"));
-                    Config.saveUserInfo(context, null, null, uin + "; skey=" + skey + "; " + ptcz + "; " + p_skey + "; " + pt4_token, skey, null);
+                    Config.saveUserInfo(context, null, null, uin + "; skey=" + skey + "; " + ptcz + "; " + p_skey + "; " + pt4_token+"; ", skey, null,p_skey.substring(p_skey.indexOf("p_skey=")+7));
                 }
             }
         }, new Result_Get_Net.FailCallback() {
